@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BluetoothActivity">
+
+    <TextView
+        android:id="@+id/tvBluetoothStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Estado de Bluetooth"
+        android:textSize="24sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/btnEnableBT"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Activar Bluetooth"
+        app:layout_constraintTop_toBottomOf="@id/tvBluetoothStatus"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/btnDisableBT"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Desactivar Bluetooth"
+        app:layout_constraintTop_toBottomOf="@id/btnEnableBT"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/btnListDevices"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Listar Dispositivos Emparejados"
+        app:layout_constraintTop_toBottomOf="@id/btnDisableBT"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/tvPairedDevices"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dispositivos emparejados:"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/btnListDevices"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
